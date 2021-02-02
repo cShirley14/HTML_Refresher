@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+        <title>A Form</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Form demonstration using Java, HTML, and CSS">
+        <meta name="keywords" content="Java, HTML, CSS, Refresher">
+        <meta name="author" content="Chantal Shirley">
+        
+        <base href="aform.html" target="_blank">
+        
+        <link href="css/styles.css" rel="stylesheet">
+        
+        <!-- Icon courtesy of Twemoji, graphics copyright 2020 Twitter, Inc & other contributors.
+        Licensed under CC-BY 4.0 -->
+        <link rel="icon" type="./image/x-icon" href="floppy.ico">
+    </head>
+    <body>
+        <header>
+            <div id="top-box">
+                <h2 id="top-style">A Form</h2>
+            </div>
+        </header>
+        <div class="form">
+            <form action ="#" >
+                <div id="form-details">
+                    <h2>Form Section</h2>
+                    <div id="credentials">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="pwd">Password:</label>
+                        <input type="password" id="pwd" name="pwd">
+                    </div>
+                    <div id="language">
+                        <label for="lang">Choose a language:</label>
+                        <select id="lang" name="languages">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="portuguese">Portuguese</option>
+                            <option value="catalan">Catalan</option>
+                            <option value="belarusian">Belarusian</option>
+                        </select>
+                    </div>
+                    <div id="fieldset">
+                        <fieldset>
+                            <legend>Color Choice</legend>
+                            <label>Red</label>
+                            <input type="radio" id="red" name="red">
+                            <label>Blue</label>
+                            <input type="radio" id="blue" name="blue">
+                            <label>Yellow</label>
+                            <input type="radio" id="yellow" name="yellow">
+                        </fieldset>
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </div>
+                    <h2>Other Section</h2>
+                </div>
+            </form>
+            <img src="image/Mr.Robot.jpg"  class="center"
+                         alt="Mr. Robot TV Series Cover Photo" 
+                         width="100">
+            <p>This is a link to a more styled page: 
+                <a href="https://www.npr.org">Better Page</a></p>
+        </div>
+        <footer id="footer">
+            <div id="ending"></div>
+            <script>
+                var date = new Date();
+                var year = date.getFullYear();
+                document.getElementById("ending").innerHTML = "&copy;&nbsp;CopyRight&nbsp;" 
+                        + year;
+            </script>
+        </footer>
+    </body>
+</html>
