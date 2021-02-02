@@ -1,0 +1,116 @@
+/* 
+    Author     : Chantal Shirley
+*/
+
+/* Set background color */
+
+body {
+    background-color: #000000;
+    font-family: "Coder's Crux 2", monospace, sans-serif;
+    color: #33ff33;
+    max-width: 1000px;
+    min-height: 500px;
+    min-width: 500px;
+}
+
+/* Desired effect was inspired by: https://css-tricks.com/snippets/css/transparent-background-images/ */
+body::after {
+    content: "";
+    background-image: url('../image/matrix.jpg');
+    opacity: 0.06;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Open Source from Andrew McCluskey, https://www.freefontspro.com/15127/coder-s-crux-2.ttf */
+@font-face {
+    font-family: "Coder's Crux 2";
+    src: url(Coders-Crux-2.ttf);
+}
+
+h1 {
+    color: #33ff33;
+}
+
+#top-box {
+    height: 80px;
+    border-left: 2px solid red;
+    border-radius: 0 25px 0 0;
+    margin: 0 10% 0 25%;
+    background-color: rgba(255,25,19, .3);
+}
+
+#top-style {
+    text-align: left;
+    font-size: 5em;
+    margin-left: .2em;
+}
+
+.form {
+    margin: 0 10% 0 25%;
+    padding: 1px;
+    display: block;
+    position: relative;
+}
+
+/* Desired effect was inspired by: https://css-tricks.com/snippets/css/transparent-background-images/ */
+.form::after {
+    content: "";
+    background: url(../image/carina-nebula.jpg); /* Background image from open license: https://pixabay.com/photos/carina-nebula-ngc-3372-11003/ */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .5;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 0 0 15px 15px;
+}
+
+#form-details {
+    padding: 0 5%;
+}
+
+#credentials {
+    margin: 5%;
+    align-content: center;
+}
+
+input[type="submit"], input[type="reset"] {
+    border-radius: 20px;
+    background-color: RGBA(153, 0, 51, .5);
+    color: chartreuse;
+}
+
+/* Inspiration from stack-overflow: https://stackoverflow.com/questions/5617703/background-color-in-input-and-text-fields */
+input[type="text"], input[type="password"], select, textarea {
+    background-color: rgba(255,25,19, .1);
+    color: chartreuse;
+    border-radius: 5px;
+}
+
+fieldset {
+    margin: 5%;
+}
+
+/* Inspiration from: https://www.w3schools.com/howto/howto_css_image_center.asp */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 0px 0px 40px 5px #F5F5F5;  
+}
+
+a {
+    text-decoration: underline chartreuse;
+    color: chartreuse;
+}
+
+p {
+    margin: 5%;
+}
